@@ -1,3 +1,5 @@
+O intuito deste script é rodar um MTR continuamente e guardar os logs disso, algo que é útil quando você tem um problema intermitente. 
+
 Como utilizar o script
 
 Instale o MTR na sua máquina ou servidor;
@@ -6,4 +8,9 @@ Instale o MTR na sua máquina ou servidor;
 
 Dica: Caso precise executar o script por longos períodos de tempo, utilize o **TMUX**, entenda como ele funciona clicando [**AQUI**](https://www.hostinger.com.br/tutoriais/como-usar-tmux)
 
-Telas do script rodando
+Ao rodar o script ele solicitará:
+- Destino a ser testado (IP ou FQDN);
+- Quantos pacotes serão enviados em cada ciclo de teste;
+- Intervalo entre cada ciclo de teste.
+
+Entenda um ciclo de teste como uma execução do MTR, sendo assim, o intervalo entre as execuções nunca deverá ser menor ou muito próximo do número de pacotes.
