@@ -2,6 +2,8 @@ O intuito deste script é rodar um MTR continuamente e guardar os logs disso, al
 
 Como utilizar o script
 
+Baixe-o [**AQUI**](https://github.com/guicampos21/ShellScripts/blob/main/mtrlog.sh)
+
 Instale o MTR na sua máquina ou servidor;
 - Debian/Ubuntu e derivados: `apt update && apt install mtr -y`
 - RHEL/OL/Rocky/CENTOS: `yum install mtr -y`
@@ -14,3 +16,5 @@ Ao rodar o script ele solicitará:
 - Intervalo entre cada ciclo de teste.
 
 Entenda um ciclo de teste como uma execução do MTR, sendo assim, o intervalo entre as execuções nunca deverá ser menor ou muito próximo do número de pacotes.
+
+Os logs ficam no diretório **logmtr**, criado no diretório onde está o script.
